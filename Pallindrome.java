@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ananya{
+public class Pallindrome{
     static void pall (String input)
 {
 char []chararray=input.toCharArray();
@@ -28,7 +28,7 @@ System.out.print("not pallindrome");
 }
 }
 public static void main(String args[]){
-String str="madam";
+String str="Oyo";
         pall(str);
 }
 }
