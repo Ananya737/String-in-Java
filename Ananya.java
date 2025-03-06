@@ -1,22 +1,34 @@
 import java.util.Scanner;
 public class Ananya{
-    public static void main(String args[]){
+    static void pall (String input)
+{
+char []chararray=input.toCharArray();
+int start=0;
+int end=chararray.length-1;
+boolean pal=true;
+while(start<end)
+{
+   if(chararray[start]!=chararray[end])
+   {
+    pal=false;
+    break;
+   }
 
-        String a= "Ananya";
-        System.out.println(a);
+    start++;
+    end--;
+}
+if(pal)
+{
+    System.out.print("pallindrome");
 
-        String obj=new String("Garima");
-        System.out.println(obj);
-
-        char arr[]={'A','a','s','t','h','a'};
-        System.out.println(arr);
-
-        String obj1=new String(arr);
-        System.out.println(obj1);
-
-
-
-
-
-    }
+}
+else
+{
+System.out.print("not pallindrome");
+}
+}
+public static void main(String args[]){
+String str="madam";
+        pall(str);
+}
 }
