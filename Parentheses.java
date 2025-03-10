@@ -93,6 +93,50 @@
 
 
 
+// import java.util.Scanner;
+// public class Parentheses{
+
+//    static boolean parentheses(String str){
+   
+    
+//     int count=0;
+//         for (int i=0;i<str.length();i++){
+//            char temp=str.charAt(i);
+
+//            if(temp=='[')count++;
+//            if(temp=='{')count++;
+//            if(temp=='(')count++;
+//            if(temp==']')count--;
+//            if(temp=='}')count--;
+//            if(temp==')')count--;
+            
+//         }
+//         if(count==0){
+//             System.out.println("Yes");
+//         }
+//         else{
+//             System.out.println("No");
+//         }
+
+//         return true;
+
+//    }
+
+
+//     public static void main(String args[]){
+//          Scanner obj=new Scanner(System.in);
+//          System.out.println("Enter a string:");
+//          String str=obj.nextLine();
+//         parentheses(str);
+        
+        
+        
+//     }
+// }
+
+
+
+
 import java.util.Scanner;
 public class Parentheses{
 
@@ -101,7 +145,8 @@ public class Parentheses{
     
     int count=0;
         for (int i=0;i<str.length();i++){
-            char temp=str.charAt(i);
+           char temp=str.charAt(i);
+           
            if(temp=='[')count++;
            if(temp=='{')count++;
            if(temp=='(')count++;
@@ -111,13 +156,13 @@ public class Parentheses{
             
         }
         if(count==0){
-            System.out.println("Yes");
+            return true;
         }
         else{
-            System.out.println("No");
+            return false;
         }
 
-        return true;
+        
 
    }
 
@@ -126,7 +171,12 @@ public class Parentheses{
          Scanner obj=new Scanner(System.in);
          System.out.println("Enter a string:");
          String str=obj.nextLine();
-        parentheses(str);
+       if(parentheses(str)){
+        System.out.println("Yes");
+       }
+       else{
+        System.out.println("No");
+       } 
         
         
         

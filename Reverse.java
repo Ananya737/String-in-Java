@@ -24,15 +24,15 @@ public class Reverse{
     public static void main(String args[]){
         String str="Hello";
         char a[]=str.toCharArray();
+        int start=0;
+        int end=a.length-1;
         for(int i=0;i<a.length;i++){
-            for(int j=a.length-1;j>=0;j--){
-                if(i<j){
-                    char temp=a[i];
-                    a[i]=a[j];
-                    a[j]=temp;
-                    System.out.println(a);
-                    
-                }
+        
+        char temp=a[start];
+        a[start]=a[end];
+        a[end]=temp;
+
+
                 
             }break;
             
