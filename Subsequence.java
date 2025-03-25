@@ -34,20 +34,25 @@
   
 
 
-
+//using For loop
 
 
   public class Subsequence{
     public static void main(String args[]){
         String str1="abcd";
         String str2="acb";
-        int count=0;
+        
         int j=0;
-        for(int i=0;i<str1.length();i++){
+        for(int i=0;i<str2.length();i++){
             if(str1.charAt(i)==str2.charAt(j)){
                 j++;
             }
         }
-        System.out.println(j);
+
+        if(j==str2.length()){
+            System.out.println("Subsequence");
+        }else{
+            System.out.println("Not Subsequence");
+        }
     }
   }
